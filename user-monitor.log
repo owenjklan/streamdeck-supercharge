@@ -1,0 +1,1008 @@
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3571  Timestamp="Tue 2024-11-26 10:08:54.345540 UTC"
+  Sender=:1.42  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.42
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/shell/window-switcher/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=793  ReplyCookie=3571  Timestamp="Tue 2024-11-26 10:08:54.345727 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3572  Timestamp="Tue 2024-11-26 10:08:54.361200 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=598  Timestamp="Tue 2024-11-26 10:08:54.361514 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3573  ReplyCookie=598  Timestamp="Tue 2024-11-26 10:08:54.369764 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=418  Timestamp="Tue 2024-11-26 10:08:54.746347 UTC"
+  Sender=:1.93  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=ListNames
+  UniqueName=:1.93
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=603  ReplyCookie=418  Timestamp="Tue 2024-11-26 10:08:54.746424 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.93
+  MESSAGE "as" {
+          ARRAY "s" {
+                  STRING "org.freedesktop.DBus";
+                  STRING ":1.106";
+                  STRING "org.freedesktop.Notifications";
+                  STRING ":1.7";
+                  STRING ":1.107";
+                  STRING ":1.8";
+                  STRING ":1.108";
+                  STRING ":1.9";
+                  STRING "io.snapcraft.SnapDesktopIntegration";
+                  STRING "org.freedesktop.portal.Desktop";
+                  STRING ":1.109";
+                  STRING "org.gnome.Mutter.DisplayConfig";
+                  STRING "org.gnome.GPaste";
+                  STRING "org.freedesktop.systemd1";
+                  STRING "org.gnome.Mutter.IdleMonitor";
+                  STRING "org.gnome.evolution.dataserver.AddressBook10";
+                  STRING "com.rastersoft.dingextension";
+                  STRING "org.gnome.SettingsDaemon.Wacom";
+                  STRING "org.gtk.vfs.mountpoint_2810";
+                  STRING "org.gnome.SettingsDaemon.MediaKeys";
+                  STRING "org.gtk.vfs.Daemon";
+                  STRING "org.kde.kdeconnect";
+                  STRING "org.gnome.SettingsDaemon.PrintNotifications";
+                  STRING "org.gnome.SettingsDaemon.Datetime";
+                  STRING "org.pulseaudio.Server";
+                  STRING "org.gnome.SettingsDaemon.XSettings";
+                  STRING "org.gnome.Mutter.ScreenCast";
+                  STRING "org.gnome.GPaste.Daemon";
+                  STRING ":1.80";
+                  STRING "org.gnome.SessionManager";
+                  STRING "org.freedesktop.impl.portal.desktop.gtk";
+                  STRING ":1.82";
+                  STRING ":1.83";
+                  STRING ":1.61";
+                  STRING ":1.84";
+                  STRING ":1.62";
+                  STRING ":1.40";
+                  STRING "org.gnome.evolution.dataserver.Sources5";
+                  STRING "org.gnome.Terminal";
+                  STRING ":1.85";
+                  STRING "org.gnome.SettingsDaemon.ScreensaverProxy";
+                  STRING ":1.63";
+                  STRING "org.gtk.vfs.UDisks2VolumeMonitor";
+                  STRING "org.a11y.Bus";
+                  STRING ":1.150";
+                  STRING ":1.86";
+                  STRING ":1.64";
+                  STRING "org.gnome.Mutter.RemoteDesktop";
+                  STRING ":1.20";
+                  STRING ":1.42";
+                  STRING "org.gnome.Calendar";
+                  STRING ":1.87";
+                  STRING "org.gnome.SettingsDaemon.Power";
+                  STRING ":1.65";
+                  STRING "org.gnome.Shell.AudioDeviceSelection";
+                  STRING "org.gnome.Identity";
+                  STRING ":1.21";
+                  STRING ":1.43";
+                  STRING ":1.130";
+                  STRING ":1.88";
+                  STRING ":1.66";
+                  STRING ":1.22";
+                  STRING "org.gnome.keyring";
+                  STRING ":1.44";
+                  STRING "org.gnome.Shell.CalendarServer";
+                  STRING ":1.131";
+                  STRING "org.freedesktop.PackageKit";
+                  STRING ":1.89";
+                  STRING ":1.67";
+                  STRING ":1.23";
+                  STRING "org.gnome.Shell";
+                  STRING ":1.45";
+                  STRING ":1.68";
+                  STRING ":1.46";
+                  STRING ":1.111";
+                  STRING ":1.69";
+                  STRING ":1.47";
+                  STRING "org.gnome.Shell.Wacom.PadOsd";
+                  STRING ":1.156";
+                  STRING ":1.48";
+                  STRING ":1.135";
+                  STRING "org.gnome.Shell.Screenshot";
+                  STRING ":1.49";
+                  STRING ":1.136";
+                  STRING "org.gtk.Settings";
+                  STRING ":1.137";
+                  STRING "org.gtk.vfs.GPhoto2VolumeMonitor";
+                  STRING "org.freedesktop.portal.Documents";
+                  STRING "ca.desrt.dconf";
+                  STRING "org.gnome.SettingsDaemon.Sound";
+                  STRING ":1.118";
+                  STRING "io.snapcraft.Store";
+                  STRING "org.gnome.SettingsDaemon.Rfkill";
+                  STRING "org.freedesktop.ScreenSaver";
+                  STRING "org.freedesktop.ReserveDevice1.Audio0";
+                  STRING "org.freedesktop.ReserveDevice1.Audio1";
+                  STRING "org.gtk.MountOperationHandler";
+                  STRING "org.gnome.Shell.Portal";
+                  STRING "org.gnome.Shell.Introspect";
+                  STRING "org.freedesktop.ReserveDevice1.Audio2";
+                  STRING "org.gnome.evolution.dataserver.Calendar8";
+                  STRING "org.kde.kdenlive-9590";
+                  STRING "org.gtk.vfs.AfcVolumeMonitor";
+                  STRING "org.freedesktop.FileManager1";
+                  STRING "org.kde.kdeconnect.daemon";
+                  STRING "org.gnome.SettingsDaemon.Smartcard";
+                  STRING "org.gnome.SettingsDaemon.A11ySettings";
+                  STRING "org.gnome.Nautilus";
+                  STRING "org.gnome.Shell.ScreenShield";
+                  STRING "org.gnome.SettingsDaemon.Housekeeping";
+                  STRING "org.gtk.vfs.GoaVolumeMonitor";
+                  STRING "org.gnome.SettingsDaemon.Sharing";
+                  STRING "com.jetbrains.toolbox";
+                  STRING ":1.90";
+                  STRING "com.canonical.Unity";
+                  STRING "org.gtk.Notifications";
+                  STRING ":1.91";
+                  STRING "org.gnome.Evolution-alarm-notify";
+                  STRING "org.mpris.MediaPlayer2.chromium.instance3789";
+                  STRING ":1.70";
+                  STRING ":1.93";
+                  STRING "org.gnome.ScreenSaver";
+                  STRING "org.freedesktop.portal.IBus";
+                  STRING ":1.71";
+                  STRING "org.gnome.OnlineAccounts";
+                  STRING ":1.72";
+                  STRING "org.gnome.Shell.Notifications";
+                  STRING ":1.50";
+                  STRING "org.freedesktop.impl.portal.desktop.gnome";
+                  STRING ":1.73";
+                  STRING ":1.51";
+                  STRING ":1.160";
+                  STRING ":1.96";
+                  STRING "org.gnome.SettingsDaemon.Color";
+                  STRING ":1.74";
+                  STRING "org.gtk.vfs.Metadata";
+                  STRING ":1.52";
+                  STRING ":1.97";
+                  STRING ":1.75";
+                  STRING ":1.53";
+                  STRING ":1.162";
+                  STRING "org.gnome.SettingsDaemon.Keyboard";
+                  STRING ":1.76";
+                  STRING ":1.54";
+                  STRING "org.freedesktop.impl.portal.PermissionStore";
+                  STRING ":1.185";
+                  STRING "org.gtk.vfs.mountpoint_dnssd";
+                  STRING ":1.141";
+                  STRING ":1.99";
+                  STRING ":1.77";
+                  STRING ":1.11";
+                  STRING "org.gnome.keyring.SystemPrompter";
+                  STRING ":1.186";
+                  STRING ":1.142";
+                  STRING "com.rastersoft.ding";
+                  STRING ":1.78";
+                  STRING ":1.56";
+                  STRING "org.kde.StatusNotifierWatcher";
+                  STRING ":1.12";
+                  STRING ":1.143";
+                  STRING ":1.79";
+                  STRING ":1.0";
+                  STRING "org.gnome.ControlCenter";
+                  STRING ":1.58";
+                  STRING ":1.145";
+                  STRING ":1.101";
+                  STRING ":1.59";
+                  STRING ":1.2";
+                  STRING ":1.15";
+                  STRING "org.freedesktop.secrets";
+                  STRING ":1.146";
+                  STRING ":1.124";
+                  STRING ":1.102";
+                  STRING "org.gtk.vfs.MTPVolumeMonitor";
+                  STRING ":1.3";
+                  STRING ":1.16";
+                  STRING "org.gtk.vfs.mountpoint_10708";
+                  STRING ":1.103";
+                  STRING "org.freedesktop.Tracker3.Miner.Files";
+                  STRING "org.freedesktop.IBus.Panel.Extension.Gtk3";
+                  STRING ":1.4";
+                  STRING "org.gimp.GIMP.UI";
+                  STRING ":1.104";
+                  STRING ":1.5";
+                  STRING ":1.18";
+                  STRING ":1.105";
+                  STRING "org.freedesktop.IBus";
+                  STRING "org.gnome.Disks.NotificationMonitor";
+                  STRING ":1.6";
+                  STRING ":1.19";
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=419  Timestamp="Tue 2024-11-26 10:08:54.749570 UTC"
+  Sender=:1.93  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=ListActivatableNames
+  UniqueName=:1.93
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=604  ReplyCookie=419  Timestamp="Tue 2024-11-26 10:08:54.749590 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.93
+  MESSAGE "as" {
+          ARRAY "s" {
+                  STRING "org.freedesktop.DBus";
+                  STRING "org.kde.kpasswdserver";
+                  STRING "org.gnome.Characters";
+                  STRING "org.freedesktop.portal.Desktop";
+                  STRING "org.gnome.Rygel1";
+                  STRING "org.gnome.ChromeGnomeShell";
+                  STRING "org.gnome.GPaste";
+                  STRING "org.freedesktop.systemd1";
+                  STRING "org.gnome.evolution.dataserver.AddressBook10";
+                  STRING "org.gnome.Logs";
+                  STRING "org.freedesktop.Tracker3.Miner.Extract";
+                  STRING "org.fedoraproject.Config.Printing";
+                  STRING "org.gtk.vfs.Daemon";
+                  STRING "org.freedesktop.ColorHelper";
+                  STRING "org.gnome.Shell.Extensions";
+                  STRING "org.kde.kdeconnect";
+                  STRING "org.freedesktop.impl.portal.Secret";
+                  STRING "org.freedesktop.Tracker3.Miner.Files.Control";
+                  STRING "org.gnome.ControlCenter.SearchProvider";
+                  STRING "org.kde.kioexecd";
+                  STRING "io.snapcraft.SessionAgent";
+                  STRING "org.gnome.DejaDup";
+                  STRING "org.freedesktop.impl.portal.desktop.gtk";
+                  STRING "org.gnome.evolution.dataserver.Sources5";
+                  STRING "org.gtk.vfs.UDisks2VolumeMonitor";
+                  STRING "org.gnome.Terminal";
+                  STRING "org.a11y.Bus";
+                  STRING "org.kde.kiod5";
+                  STRING "org.gnome.Calendar";
+                  STRING "org.gnome.Identity";
+                  STRING "org.gnome.keyring";
+                  STRING "org.gnome.Shell.CalendarServer";
+                  STRING "org.gnome.font-viewer";
+                  STRING "org.gnome.Nautilus.Tracker3.Miner.Files";
+                  STRING "org.gnome.Characters.BackgroundService";
+                  STRING "org.freedesktop.Tracker3.Writeback";
+                  STRING "org.gnome.Todo";
+                  STRING "org.gnome.evolution.dataserver.UserPrompter0";
+                  STRING "org.gnome.GPaste.Ui";
+                  STRING "org.freedesktop.portal.Documents";
+                  STRING "org.gnome.FileRoller";
+                  STRING "org.freedesktop.portal.Tracker";
+                  STRING "org.bluez.obex";
+                  STRING "org.gtk.vfs.GPhoto2VolumeMonitor";
+                  STRING "ca.desrt.dconf";
+                  STRING "org.kde.kssld5";
+                  STRING "io.snapcraft.Launcher";
+                  STRING "org.gnome.Shell.Screencast";
+                  STRING "org.gnome.Nautilus.Tracker3.Miner.Extract";
+                  STRING "org.gnome.evince.Daemon";
+                  STRING "io.snapcraft.Settings";
+                  STRING "org.gnome.evolution.dataserver.Calendar8";
+                  STRING "org.kde.kglobalaccel";
+                  STRING "org.gtk.vfs.AfcVolumeMonitor";
+                  STRING "org.gnome.seahorse.Application";
+                  STRING "org.freedesktop.FileManager1";
+                  STRING "org.gnome.Totem";
+                  STRING "org.kde.kwalletd5";
+                  STRING "org.gnome.baobab";
+                  STRING "org.gnome.Nautilus";
+                  STRING "org.gtk.GLib.PACRunner";
+                  STRING "org.gtk.vfs.GoaVolumeMonitor";
+                  STRING "org.gnome.Extensions";
+                  STRING "org.gnome.Calculator.SearchProvider";
+                  STRING "org.gnome.ArchiveManager1";
+                  STRING "org.gnome.Cheese";
+                  STRING "org.gnome.Sudoku";
+                  STRING "org.gnome.Shell.PortalHelper";
+                  STRING "org.kde.kded5";
+                  STRING "org.gnome.ScreenSaver";
+                  STRING "org.freedesktop.portal.IBus";
+                  STRING "org.gnome.OnlineAccounts";
+                  STRING "com.feralinteractive.GameMode";
+                  STRING "org.freedesktop.impl.portal.desktop.gnome";
+                  STRING "org.kde.ActivityManager";
+                  STRING "org.gnome.Shell.Notifications";
+                  STRING "org.gtk.vfs.Metadata";
+                  STRING "org.freedesktop.impl.portal.PermissionStore";
+                  STRING "org.gnome.Rhythmbox3";
+                  STRING "org.gnome.Shell.HotplugSniffer";
+                  STRING "org.gnome.keyring.SystemPrompter";
+                  STRING "org.gnome.DiskUtility";
+                  STRING "org.gnome.gedit";
+                  STRING "org.gnome.ControlCenter";
+                  STRING "org.freedesktop.secrets";
+                  STRING "org.gtk.vfs.MTPVolumeMonitor";
+                  STRING "org.gnome.keyring.PrivatePrompter";
+                  STRING "org.kde.kcookiejar5";
+                  STRING "org.freedesktop.Tracker3.Miner.Files";
+                  STRING "org.freedesktop.IBus";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3574  Timestamp="Tue 2024-11-26 10:08:56.045265 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=599  Timestamp="Tue 2024-11-26 10:08:56.045515 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3575  ReplyCookie=599  Timestamp="Tue 2024-11-26 10:08:56.047424 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "active-on-seats";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                          STRING "seat0";
+                                                  };
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3576  Timestamp="Tue 2024-11-26 10:08:56.928022 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=600  Timestamp="Tue 2024-11-26 10:08:56.928478 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3577  ReplyCookie=600  Timestamp="Tue 2024-11-26 10:08:56.932826 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3578  Timestamp="Tue 2024-11-26 10:09:01.195360 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=601  Timestamp="Tue 2024-11-26 10:09:01.195692 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3579  ReplyCookie=601  Timestamp="Tue 2024-11-26 10:09:01.198361 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "active-on-seats";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                          STRING "seat0";
+                                                  };
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3580  Timestamp="Tue 2024-11-26 10:09:01.844999 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=602  Timestamp="Tue 2024-11-26 10:09:01.845777 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3581  ReplyCookie=602  Timestamp="Tue 2024-11-26 10:09:01.850658 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3582  Timestamp="Tue 2024-11-26 10:09:02.161754 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=603  Timestamp="Tue 2024-11-26 10:09:02.162216 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3583  ReplyCookie=603  Timestamp="Tue 2024-11-26 10:09:02.163657 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "active-on-seats";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                          STRING "seat0";
+                                                  };
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3584  Timestamp="Tue 2024-11-26 10:09:02.896325 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=604  Timestamp="Tue 2024-11-26 10:09:02.896850 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3585  ReplyCookie=604  Timestamp="Tue 2024-11-26 10:09:02.909112 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3586  Timestamp="Tue 2024-11-26 10:09:03.644837 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=605  Timestamp="Tue 2024-11-26 10:09:03.645203 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3587  ReplyCookie=605  Timestamp="Tue 2024-11-26 10:09:03.646511 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "active-on-seats";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                          STRING "seat0";
+                                                  };
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3588  Timestamp="Tue 2024-11-26 10:09:04.995933 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=606  Timestamp="Tue 2024-11-26 10:09:04.996724 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3589  ReplyCookie=606  Timestamp="Tue 2024-11-26 10:09:05.007090 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=3590  Timestamp="Tue 2024-11-26 10:09:05.695554 UTC"
+  Sender=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=RunningApplicationsChanged
+  UniqueName=:1.42
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=607  Timestamp="Tue 2024-11-26 10:09:05.695960 UTC"
+  Sender=:1.12  Destination=:1.42  Path=/org/gnome/Shell/Introspect  Interface=org.gnome.Shell.Introspect  Member=GetRunningApplications
+  UniqueName=:1.12
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=3591  ReplyCookie=607  Timestamp="Tue 2024-11-26 10:09:05.697099 UTC"
+  Sender=:1.42  Destination=:1.12
+  UniqueName=:1.42
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Terminal.desktop";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "active-on-seats";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                          STRING "seat0";
+                                                  };
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.kde.kdenlive.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gimp.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "google-chrome.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "audacity.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "window:58";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.Nautilus.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "jetbrains-pycharm-3aefef57-2550-46c6-885a-f284717829b8.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "gnome-control-center.desktop";
+                          ARRAY "{sv}" {
+                          };
+                  };
+          };
+  };
+
