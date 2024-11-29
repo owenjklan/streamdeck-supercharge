@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 import logging
-import playsound3 as playsound
 from pathlib import Path
+from threading import Thread
 
-from flask import Flask, render_template, request, url_for
+import playsound3 as playsound
+from flask import Flask, request
+
+import x11_focus_monitor
+from src.streamdeck_actions import activate_group_page
 
 # from x11_focus_monitor import last_activation
 
@@ -15,8 +19,6 @@ print(f"Audio base base directory: {AUDIO_BASE_DIR}")
 
 app = Flask(
     __name__,
-    # static_folder=HTML_BASE_DIR,
-    # template_folder=HTML_BASE_DIR,
 )
 
 audio_confirmations = True
@@ -38,6 +40,14 @@ def play_event(active_page: str):
     playsound.playsound(audio_path)
     return "OK"
 
+
+@app.route("/activate_page/<activation_group>")
+def activate_page(activation_group: str):
+    request_args = request.args
+    page = int(request_args["page"])
+
+    activate_group_page(activation_group, page, audio_dir=AUDIO_BASE_DIR)
+    return "OK"
 
 @app.route("/enable_keyclick", methods=['GET'])
 def enable_keyclicks():
@@ -66,4 +76,9 @@ def enable_confirmations():
     return "OK"
 
 if __name__ == '__main__':
+    # Start X11 focus watching thread
+    focus_monitor_thread = Thread(target=x11_focus_monitor.monitor_x11_focus, args=(AUDIO_BASE_DIR,))
+    focus_monitor_thread.start()
+
+
     app.run(host='127.0.0.1', port=33333, debug=True)
