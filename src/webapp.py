@@ -17,12 +17,15 @@ SEARCH_BASE_DIR = HTML_BASE_DIR / 'search'
 print(f"HTML source base directory: {HTML_BASE_DIR}")
 print(f"Audio base base directory: {AUDIO_BASE_DIR}")
 
+
 app = Flask(
     __name__,
 )
 
-audio_confirmations = True
+app.__setattr__("focus_monitor_started", False)
+
 keyclicks = True
+
 
 @app.route("/play/<active_page>", methods=['GET'])
 def play_event(active_page: str):
@@ -48,6 +51,7 @@ def activate_page(activation_group: str):
 
     activate_group_page(activation_group, page, audio_dir=AUDIO_BASE_DIR)
     return "OK"
+
 
 @app.route("/enable_keyclick", methods=['GET'])
 def enable_keyclicks():
@@ -75,10 +79,12 @@ def enable_confirmations():
 
     return "OK"
 
+
 if __name__ == '__main__':
     # Start X11 focus watching thread
-    focus_monitor_thread = Thread(target=x11_focus_monitor.monitor_x11_focus, args=(AUDIO_BASE_DIR,))
-    focus_monitor_thread.start()
-
+    if not app.__getattribute__("focus_monitor_started"):
+        focus_monitor_thread = Thread(target=x11_focus_monitor.monitor_x11_focus, args=(AUDIO_BASE_DIR,))
+        focus_monitor_thread.start()
+        app.__setattr__("focus_monitor_started", True)
 
     app.run(host='127.0.0.1', port=33333, debug=True)

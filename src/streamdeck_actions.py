@@ -1,3 +1,4 @@
+import threading
 from pathlib import Path
 
 import playsound3 as playsound
@@ -12,6 +13,8 @@ last_group_page: dict[str, int] = {
     "gimp": 4  # Default: GIMP Editing
 }
 
+group_mutex = threading.Lock()
+
 
 def activate_group_page(
         group: str,
@@ -19,12 +22,13 @@ def activate_group_page(
         audio_dir: str | Path = "."
 ):
     global last_group, last_group_page
-    previous_last_page = last_group_page[group]
-    last_group_page[group] = page_index
+    with group_mutex:
+        previous_last_page = last_group_page[group]
+        last_group_page[group] = page_index
 
-    print(f"Activating group page: {group}[{page_index}]")
-    print(f"Last page was: {previous_last_page}, now set to {page_index}")
-    main_streamdeck.set_page(page_index=page_index)
+        print(f"Activating group page: {group}[{page_index}]")
+        print(f"Last page was: {previous_last_page}, now set to {page_index}")
+        main_streamdeck.set_page(page_index=page_index)
 
 
 def activate_group(
@@ -32,17 +36,18 @@ def activate_group(
         audio_dir: str | Path = "."
 ):
     global last_group
+    with group_mutex:
 
-    group_str = str(group)
+        group_str = str(group)
 
-    print(f"Activating group: {group_str}")
+        print(f"Activating group: {group_str}")
 
-    if last_group != group_str:
-        playsound.playsound(audio_dir / group_str / "activated.wav")
-        last_group = group_str
-        print(f"Last group set to {last_group}")
+        if last_group != group_str:
+            playsound.playsound(audio_dir / group_str / "activated.wav")
+            last_group = group_str
+            print(f"Last group set to {last_group}")
 
-    group_page = last_group_page.get(group_str, 1)
+        group_page = last_group_page.get(group_str)
 
-    print(f"Calling Stream Deck activation: {group_str}, last page {group_page}")
-    main_streamdeck.set_page(page_index=group_page)
+        print(f"Calling Stream Deck activation: {group_str}, last page {group_page}")
+        main_streamdeck.set_page(page_index=group_page)
