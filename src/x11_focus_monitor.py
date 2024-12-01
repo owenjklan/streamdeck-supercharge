@@ -1,11 +1,8 @@
-import subprocess
 from pathlib import Path
-
-import playsound3 as playsound
 
 import Xlib.display
 
-from src.streamdeck_actions import activate_group
+from streamdeck_actions import activate_group
 
 AUDIO_BASE_DIR = Path(__file__).resolve().parent / 'audio'
 

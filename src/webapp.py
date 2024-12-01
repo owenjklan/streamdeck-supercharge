@@ -7,7 +7,7 @@ import playsound3 as playsound
 from flask import Flask, request
 
 import x11_focus_monitor
-from src.streamdeck_actions import activate_group_page
+from streamdeck_actions import activate_group_page
 
 # from x11_focus_monitor import last_activation
 

@@ -3,7 +3,7 @@ from pathlib import Path
 
 import playsound3 as playsound
 
-from src.streamdeck import StreamDeck
+from streamdeck import StreamDeck
 
 main_streamdeck = StreamDeck(deck_index=1)
 
