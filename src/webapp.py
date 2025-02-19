@@ -24,8 +24,9 @@ app = Flask(
 
 app.__setattr__("focus_monitor_started", False)
 
+ready_prompt_played = False
 keyclicks = True
-
+audio_confirmations = True
 
 @app.route("/play/<active_page>", methods=['GET'])
 def play_event(active_page: str):
@@ -82,9 +83,9 @@ def enable_confirmations():
 
 if __name__ == '__main__':
     # Start X11 focus watching thread
-    if not app.__getattribute__("focus_monitor_started"):
-        focus_monitor_thread = Thread(target=x11_focus_monitor.monitor_x11_focus, args=(AUDIO_BASE_DIR,))
-        focus_monitor_thread.start()
-        app.__setattr__("focus_monitor_started", True)
+    # if not app.__getattribute__("focus_monitor_started"):
+    #     focus_monitor_thread = Thread(target=x11_focus_monitor.monitor_x11_focus, args=(AUDIO_BASE_DIR,))
+    #     focus_monitor_thread.start()
+    #     app.__setattr__("focus_monitor_started", True)
 
     app.run(host='127.0.0.1', port=33333, debug=True)

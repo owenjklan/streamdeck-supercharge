@@ -1,0 +1,17 @@
+[Unit]
+Description=Stream Deck Supercharge
+After=network.target
+
+[Service]
+Type=exec
+#Environment=EXAMPLE_ENV=bla
+WorkingDirectory=/home/owen/src/streamdeck-supercharge/src
+ExecStart=/home/owen/src/streamdeck-supercharge/.venv/bin/python /home/owen/src/streamdeck-supercharge/src/webapp.py
+Restart=always
+
+# The following aren't necessary if running as a '--user' service
+#User=owen
+#Group=owen
+
+[Install]
+WantedBy=multi-user.target
